@@ -41,6 +41,6 @@ app.get("/fish.jpg", (req, res) => {
 
 // start server
 //const port = process.env.NODE_ENV === 'production' ? 80 : 4000;
-const server = app.listen(process.env.PORT, function () {
+const server = app.listen(process.env.PORT || 5000, function() {
     console.log('Server listening on port ' + process.env.PORT);
 });
