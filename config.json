@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://admin:admin22@ds143143.mlab.com:43143/ocean-eyes",
+    "connectionString": "mongodb+srv://dom:admin@cluster0-enx8v.mongodb.net/test?retryWrites=true&w=majority",
     "secret": "gdsgk63643kgewt446364gdsg"
 }

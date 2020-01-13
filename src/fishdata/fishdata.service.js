@@ -5,7 +5,8 @@ const Fishdata = db.FishData;
 
 module.exports = {
     submit,
-    getAll
+    getAll,
+    getAllItems
 };
 
 async function submit(data) {
@@ -16,6 +17,10 @@ async function submit(data) {
 
 async function getAll(data) {
 	return await Fishdata.find({userId:String(data.userId)});
+}
+
+async function getAllItems(data) {
+	return await Fishdata.find({});
 }
 
 /*async function getByDate(data) {

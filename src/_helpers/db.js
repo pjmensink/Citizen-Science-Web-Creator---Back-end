@@ -1,6 +1,7 @@
 const config = require('config.json');
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true)
+const mongoURL = 'mongodb+srv://dom:admin@cluster0-enx8v.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(config.connectionString, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 
