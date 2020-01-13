@@ -7,4 +7,6 @@ The back end portion of the web creator application that is separately deployed.
 
 ## Adding database connection string
 
-- [config file](https://github.com/DomGarg/Citizen-Science-Web-Creator---Back-end/blob/master/config.json)
+- Click on the file named 'config.json' found above
+- Copy & paste your connection string in between the quotation marks
+- Make sure not to include the '<' and '>' symbols when inputting your username and password into the connection string
