@@ -7,4 +7,4 @@ The back end portion of the web creator application that is separately deployed.
 
 ## Adding database connection string
 
-- [config file](https://github.com/DomGarg/Citizen-Science-Web-Creator---Back-end/config.js)
+- [config file](https://github.com/DomGarg/Citizen-Science-Web-Creator---Back-end/config.json)
