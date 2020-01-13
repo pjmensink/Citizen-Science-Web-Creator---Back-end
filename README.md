@@ -8,5 +8,5 @@ The back end portion of the web creator application that is separately deployed.
 ## Adding database connection string
 
 - Click on the file named 'config.json' found above
-- Copy & paste your connection string in between the quotation marks
+- Copy & paste your connection string in between the quotation marks after the 'connectionString' label
 - Make sure not to include the '<' and '>' symbols when inputting your username and password into the connection string
