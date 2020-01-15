@@ -10,6 +10,12 @@ path = require('path')
 
 //res.header("Access-Control-Allow-Origin", "*");
 
+app.all('/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
@@ -26,7 +32,6 @@ app.use('/public', express.static(path.join(__dirname, '../../public')));
 app.use(errorHandler);
 
 app.post('/upload', (req, res, next) => {
-	res.header("Access-Control-Allow-Origin", "*");
 	let imageFile = req.files.file;
 	let savePath = path.join(__dirname, "../../public")
 	imageFile.mv(`${savePath}/${req.body.filename}.jpg`, err => {
@@ -39,7 +44,6 @@ app.post('/upload', (req, res, next) => {
 });
 
 app.get("/fish.jpg", (req, res) => {
-	res.header("Access-Control-Allow-Origin", "*");
   res.sendFile(path.join(__dirname, "../../public/fish.jpg"));
 });
 
