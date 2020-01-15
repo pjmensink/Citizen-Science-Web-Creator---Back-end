@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb+srv://dom:admin@cluster0-enx8v.mongodb.net/test?retryWrites=true&w=majority",
+    "connectionString": "mongodb+srv://dom:admin1@cluster0-enx8v.mongodb.net/test?retryWrites=true&w=majority",
     "secret": "gdsgk63643kgewt446364gdsg"
 }
